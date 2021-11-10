@@ -1,0 +1,24 @@
+Source: python-types-ipaddress
+Section: python
+Priority: optional
+Maintainer: Pexip AS <packaging@pexip.com>
+Build-Depends: debhelper (>= 11), dh-python, python3-all, python3-setuptools
+Standards-Version: 4.1.3
+Homepage: https://github.com/python/typeshed
+X-Python3-Version: >= 3.7
+Vcs-Browser: https://github.com/pexip/os-python-types-ipaddress
+Vcs-Git: https://github.com/pexip/os-python-types-ipaddress.git
+
+
+Package: python3-types-ipaddress
+Architecture: all
+Depends: ${python3:Depends}, ${misc:Depends}
+Description: Typing stubs for ipaddress
+ This is a PEP 561 type stub package for the ipaddress package. It can be
+ used by type-checking tools like mypy, PyCharm, pytype etc. to check
+ code that uses ipaddress. The source for this package can be found at
+ https://github.com/python/typeshed/tree/master/stubs/ipaddress. All
+ fixes for types and metadata should be contributed there.
+ .
+ See https://github.com/python/typeshed/blob/master/README.md for
+ more details.
